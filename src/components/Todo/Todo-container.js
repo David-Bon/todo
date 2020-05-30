@@ -1,11 +1,11 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
-import Todo from "./todo";
+import Todo from "./Todo";
 
 class TodoContainer extends Component {
 
     render() {
-const {todo} = this.props;
+        const {todo} = this.props;
         return <Todo todo={todo}/>
     }
 }
@@ -13,5 +13,6 @@ const {todo} = this.props;
 const mapStateToProps = (state) => ({
     todo: state.todo
 });
-const mapDispatchToProps={};
+const mapDispatchToProps = {};
+
 export default connect(mapStateToProps, mapDispatchToProps)(TodoContainer)
