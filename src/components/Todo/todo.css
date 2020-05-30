@@ -1,0 +1,29 @@
+.todo-container {
+    margin-top: 20px;
+    list-style-type: none;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    width: 300px;
+    padding: 0px 10px 3px 10px;
+
+}
+.todo {
+    padding: 10px 0px 10px 0px;
+    border-bottom: 1px solid lightgrey;
+}
+.btn-container {
+    margin-left: 110px;
+}
+.todo-btn {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    color: white;
+}
+.important-btn {
+    width: 30px;
+    background: forestgreen;
+}
+.delete-btn {
+    margin-left: 5px;
+    background: orangered;
+}
