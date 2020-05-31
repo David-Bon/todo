@@ -27,3 +27,9 @@
     margin-left: 5px;
     background: orangered;
 }
+.todo-text {
+    cursor: pointer;
+}
+.done {
+    text-decoration: line-through;
+}
