@@ -1,20 +1,18 @@
 import React from "react";
 import classNames from 'classnames';
-
 import './todo.css';
-
 const Todo = (props) => {
-    const { setToggleImportant } = props;
+    const { setToggleImportant, setToggleDone, onToggleDelete, todo } = props;
     return <ul className='todo-container'>
         {
-            props.todo.map((item) => {
-                const { text, id, done } = item;
+            todo.map((item) => {
+                const { text, id, done, important } = item;
 
                 return <li className='todo' key={id}>
-                    <span className={classNames('todo-text', {'done': done})} onClick={() => setToggleImportant(id)}>{text}</span>
+                    <span className={classNames('todo-text', {'done': done, 'onImportant': important})} onClick={() => setToggleDone(id)}>{text}</span>
                     <span className='btn-container'>
-                        <button className='important-btn todo-btn'>!</button>
-                        <button className='delete-btn todo-btn'>delete</button>
+                        <button className='important-btn todo-btn' onClick={() => setToggleImportant(id)}>!</button>
+                        <button className='delete-btn todo-btn' onClick={() => onToggleDelete(id)}>delete</button>
                     </span>
 
                 </li>
