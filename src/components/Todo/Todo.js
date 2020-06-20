@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import './todo.css';
 const Todo = (props) => {
     const { setToggleImportant, setToggleDone, onToggleDelete, todo } = props;
+    debugger
     return <ul className='todo-container'>
         {
             todo.map((item) => {

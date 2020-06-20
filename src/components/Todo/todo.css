@@ -1,10 +1,9 @@
 .todo-container {
-    margin-top: 20px;
     list-style-type: none;
     border: 1px solid lightgrey;
     border-radius: 5px;
-    width: 300px;
-    padding: 0px 10px 3px 10px;
+    width: auto;
+    padding: 10px 10px;
 
 }
 .todo {
@@ -30,6 +29,7 @@
 }
 .todo-text {
     cursor: pointer;
+    margin-right: 20px;
 }
 .done {
     text-decoration: line-through;
